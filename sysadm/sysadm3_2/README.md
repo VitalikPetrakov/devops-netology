@@ -47,8 +47,8 @@ Connection to localhost closed.
 
 13.	Бывает, что есть необходимость переместить запущенный процесс из одной сессии в другую. Попробуйте сделать это, воспользовавшись reptyr. Например, так можно перенести в screen процесс, который вы запустили по ошибке в обычной SSH-сессии.  
 >Получилось перехватить ping с одного pty терминала на другой pty терминал  
-root@vagrant:~# lsof | grep ping  
-root@vagrant:~# reptyr 2328  
+root@vagrant:# lsof | grep ping  
+root@vagrant:# reptyr 2328  
 64 bytes from ya.ru (87.250.250.242): icmp_seq=99 ttl=52 time=6.50 ms  
 64 bytes from ya.ru (87.250.250.242): icmp_seq=100 ttl=52 time=6.15 ms  
 14.	sudo echo string > /root/new_file не даст выполнить перенаправление под обычным пользователем, так как перенаправлением занимается процесс shell'а, который запущен без sudo под вашим пользователем. Для решения данной проблемы можно использовать конструкцию echo string | sudo tee /root/new_file. Узнайте что делает команда tee и почему в отличие от sudo echo команда с sudo tee будет работать.  
