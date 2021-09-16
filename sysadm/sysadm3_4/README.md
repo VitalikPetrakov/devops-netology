@@ -44,21 +44,21 @@ o	добавьте в Vagrantfile проброс порта Netdata на сво�
 
 4.	Можно ли по выводу dmesg понять, осознает ли ОС, что загружена не на настоящем оборудовании, а на системе виртуализации?  
 >Да, можно
-root@vagrant:~# dmesg -H | grep virtual  
+root@vagrant:# dmesg -H | grep virtual  
 [  +0.000006] CPU MTRRs all blank - virtualized system.  
 [  +0.000001] Booting paravirtualized kernel on KVM  
 [  +0.000121] Performance Events: PMU not available due to virtualization, using software events only.  
 [  +0.000025] systemd[1]: Detected virtualization oracle.  
 5.	Как настроен sysctl fs.nr_open на системе по-умолчанию? Узнайте, что означает этот параметр. Какой другой существующий лимит не позволит достичь такого числа (ulimit --help)?  
->root@vagrant:~#  /sbin/sysctl -n fs.nr_open  
+>root@vagrant:#  /sbin/sysctl -n fs.nr_open  
 	1048576  
-    root@vagrant:~#  ulimit –Sn  
+    root@vagrant:#  ulimit –Sn  
     1024  
 
 6.	Запустите любой долгоживущий процесс (не ls, который отработает мгновенно, а, например, sleep 1h) в отдельном неймспейсе процессов; покажите, что ваш процесс работает под PID 1 через nsenter. Для простоты работайте в данном задании под root (sudo -i). Под обычным пользователем требуются дополнительные опции (--map-root-user) и т.д.  
->root@vagrant:~# ps -e | grep sleep    
+>root@vagrant:# ps -e | grep sleep    
    1441 pts/0    00:00:00 sleep  
-root@vagrant:~# nsenter --target 1441 --pid –mount  
+root@vagrant:# nsenter --target 1441 --pid –mount  
 root@vagrant:/# ps  
     PID TTY          TIME CMD  
    1493 pts/1    00:00:00 su  
