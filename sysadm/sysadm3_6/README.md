@@ -73,8 +73,7 @@ mnt-by:         WESTCALL-MNT
 created:        2017-07-07T18:45:09Z  
 last-modified:  2017-07-07T18:45:09Z  
 5.	Через какие сети проходит пакет, отправленный с вашего компьютера на адрес 8.8.8.8? Через какие AS? Воспользуйтесь утилитой traceroute  
->У меня по итогу одни звезды получаются…..  
- ![](https://ams02pap001files.storage.live.com/y4m0j44AGwKYXcMmBM9JfTtGAdU2dBPBQj8cGLWvLDvmOX4XyM98lmI7heSuEtjLOOenanNHGQRFUKxQkvgQB96kGNg3ayrvpuN2aiUWgL00ikB5dv8R54AjWq_F0pgEGRRWI1h9YRyoTqE8aPnYwY4023h8OZsPLoNc2nPLzplur9IzDhCxvtxpQ_NnEYLtbub?width=640&height=171&cropmode=none)  
+ ![](https://ams02pap001files.storage.live.com/y4mjNBOREkTV7q4C8Xl8WgFBUn9BfIy7oeS-TEOuZrWmEylQOrguEml_lV5lu-iRv2CEktHRy8RlMdVGivnPtATtCVgCD0S8YoRqRQqMopGfecRTRnvm0rK1TE8r6b2Q611VI8t-EbZp6MDQmEyeNIgETM5ZTMvqb_Mi1RQagPQJ0W4i78pvb66jkUfhTCxfhgF?width=950&height=493&cropmode=none)  
 6.	Повторите задание 5 в утилите mtr. На каком участке наибольшая задержка - delay?  
 >В моем случае 217.172.29.113  
  ![](https://ams02pap001files.storage.live.com/y4mW2m3jP1TV7eLkzQZBunSSxRx5k2zjVqtIoWNxNQsRjbB-uSjBFosnUcL2eV0bZCulWTTTYy9oOral3Unci2tmZg9iTD9USeaTdor-gJlMX_oh-lZYJLLZnJuSC55FsgZhff8XRislmFVqOs-DpUoLwZtwyGbYG25T-PXSNOZubB0CugC2PkuiZxY1k6MX_zS?width=943&height=587&cropmode=none)  
