@@ -3,6 +3,15 @@
 o	поместите его в автозагрузку,  
 o	предусмотрите возможность добавления опций к запускаемому процессу через внешний файл (посмотрите, например, на systemctl cat cron),  
 o	удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается.  
+>[Unit]  
+Description=Node Explorer  
+After=local-fs.target  
+[Service]  
+ExecStart=/var/node_explorer  
+EnvironmentFile=/etc/default/node_explorer  
+[Install]  
+WantedBy=multiuser.target  
+
 Проверка автозапуска  
 ![](https://ams02pap001files.storage.live.com/y4mpg5xsbMg0nZ6RKU_ozhVpECGUcrxRdHrPgea4nKFPFQQeKeYjDIg9WvenCRoj7Kqsydf5alIafnEd9sQAMs9l_tQVDWJLsTAKIl5qDh50kpk_NLEVmnyJAob8q1s6mvAbzed2Rwl7euZktZsu7iFZ6tG6PXb6DzArvXhqfteSdeEXhIbkmYQ2TrF8tZ5n_Si?width=1291&height=472&cropmode=none ) 
 Проверка остановки  
