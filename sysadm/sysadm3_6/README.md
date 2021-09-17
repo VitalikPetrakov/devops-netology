@@ -59,11 +59,11 @@ x-dns-prefetch-control: off
 X-Firefox-Spdy: h2  
 •	проверьте время загрузки страницы, какой запрос обрабатывался дольше всего?  
 Судя по таймингам, самый долгий запрос был именно первый HTTP запрос (код выше)  
- ![](https://ams02pap001files.storage.live.com/y4mK1b4t1OHg7jtYQC48AR5LSlAish9MZ6sOYISzl4FsxuCsVbaO201mgQOPQduiskW7xGSqMySiAZsNQxApIzU0Y4bK57S0oTYSH6pUx-bQyGS6Ayvwz71PoQPd0R643wFKJWDHAKu1sQgPFMliZBADuK42alUs5zlLDslhGkuftJO8sNIP1XA5KShEbrDJ5bg?width=543&height=223&cropmode=none)
+ ![](https://ams02pap001files.storage.live.com/y4mK1b4t1OHg7jtYQC48AR5LSlAish9MZ6sOYISzl4FsxuCsVbaO201mgQOPQduiskW7xGSqMySiAZsNQxApIzU0Y4bK57S0oTYSH6pUx-bQyGS6Ayvwz71PoQPd0R643wFKJWDHAKu1sQgPFMliZBADuK42alUs5zlLDslhGkuftJO8sNIP1XA5KShEbrDJ5bg?width=543&height=223&cropmode=none)  
 •	приложите скриншот консоли браузера в ответ.  
- ![](https://ams02pap001files.storage.live.com/y4mp1odeKo4FjVw2D2iaR_wimjkb_Do7FS_DMOr_dBGEo7vER3_T82wdd7v3Ku0MtLt8L-M_6u8MPq-CvIWEBHvXFYi61PvfhB_taUFneSnX-s0B2SOC6fPJ1JmBvP_eN8M7B-KEVg-jtw9TrjZi7R6ZOIJyJovj9h_VINNFBmRPNICHJpFgqEdA2wNYVvyPoaX?width=1919&height=998&cropmode=none)
+ ![](https://ams02pap001files.storage.live.com/y4mp1odeKo4FjVw2D2iaR_wimjkb_Do7FS_DMOr_dBGEo7vER3_T82wdd7v3Ku0MtLt8L-M_6u8MPq-CvIWEBHvXFYi61PvfhB_taUFneSnX-s0B2SOC6fPJ1JmBvP_eN8M7B-KEVg-jtw9TrjZi7R6ZOIJyJovj9h_VINNFBmRPNICHJpFgqEdA2wNYVvyPoaX?width=1919&height=998&cropmode=none)  
 3.	Какой IP адрес у вас в интернете?  
- ![](https://ams02pap001files.storage.live.com/y4mG5r7p62zHEoJ4-QPPmJYDBdkAZLsFka6gCM6ubEV_INDBbZtbKnn0QhvLPgYm-L7H46pVK5XWieu-FdFg8RctQ41baxJg2iz8cCYZvR8xVKQ8cgLct9S-h0zYSS-VwpTAAaocuw2rxXxVPh2k586YZoVUyPWjJJcxmFJxFY3fYlP28V7pOrSdoKjt4O2h5bh?width=579&height=165&cropmode=none)
+ ![](https://ams02pap001files.storage.live.com/y4mG5r7p62zHEoJ4-QPPmJYDBdkAZLsFka6gCM6ubEV_INDBbZtbKnn0QhvLPgYm-L7H46pVK5XWieu-FdFg8RctQ41baxJg2iz8cCYZvR8xVKQ8cgLct9S-h0zYSS-VwpTAAaocuw2rxXxVPh2k586YZoVUyPWjJJcxmFJxFY3fYlP28V7pOrSdoKjt4O2h5bh?width=579&height=165&cropmode=none)  
 4.	Какому провайдеру принадлежит ваш IP адрес? Какой автономной системе AS? Воспользуйтесь утилитой whois  
 >org-name:       OOO WestCall Ltd.  
 root@notebook:/mnt/c/devops/devops-netology# whois -h whois.radb.net 217.172.29.117  
@@ -74,10 +74,10 @@ created:        2017-07-07T18:45:09Z
 last-modified:  2017-07-07T18:45:09Z  
 5.	Через какие сети проходит пакет, отправленный с вашего компьютера на адрес 8.8.8.8? Через какие AS? Воспользуйтесь утилитой traceroute  
 >У меня по итогу одни звезды получаются…..  
- ![](https://ams02pap001files.storage.live.com/y4m0j44AGwKYXcMmBM9JfTtGAdU2dBPBQj8cGLWvLDvmOX4XyM98lmI7heSuEtjLOOenanNHGQRFUKxQkvgQB96kGNg3ayrvpuN2aiUWgL00ikB5dv8R54AjWq_F0pgEGRRWI1h9YRyoTqE8aPnYwY4023h8OZsPLoNc2nPLzplur9IzDhCxvtxpQ_NnEYLtbub?width=640&height=171&cropmode=none)
+ ![](https://ams02pap001files.storage.live.com/y4m0j44AGwKYXcMmBM9JfTtGAdU2dBPBQj8cGLWvLDvmOX4XyM98lmI7heSuEtjLOOenanNHGQRFUKxQkvgQB96kGNg3ayrvpuN2aiUWgL00ikB5dv8R54AjWq_F0pgEGRRWI1h9YRyoTqE8aPnYwY4023h8OZsPLoNc2nPLzplur9IzDhCxvtxpQ_NnEYLtbub?width=640&height=171&cropmode=none)  
 6.	Повторите задание 5 в утилите mtr. На каком участке наибольшая задержка - delay?  
 >В моем случае 217.172.29.113  
- ![](https://ams02pap001files.storage.live.com/y4mW2m3jP1TV7eLkzQZBunSSxRx5k2zjVqtIoWNxNQsRjbB-uSjBFosnUcL2eV0bZCulWTTTYy9oOral3Unci2tmZg9iTD9USeaTdor-gJlMX_oh-lZYJLLZnJuSC55FsgZhff8XRislmFVqOs-DpUoLwZtwyGbYG25T-PXSNOZubB0CugC2PkuiZxY1k6MX_zS?width=943&height=587&cropmode=none)
+ ![](https://ams02pap001files.storage.live.com/y4mW2m3jP1TV7eLkzQZBunSSxRx5k2zjVqtIoWNxNQsRjbB-uSjBFosnUcL2eV0bZCulWTTTYy9oOral3Unci2tmZg9iTD9USeaTdor-gJlMX_oh-lZYJLLZnJuSC55FsgZhff8XRislmFVqOs-DpUoLwZtwyGbYG25T-PXSNOZubB0CugC2PkuiZxY1k6MX_zS?width=943&height=587&cropmode=none)  
 7.	Какие DNS сервера отвечают за доменное имя dns.google? Какие A записи? воспользуйтесь утилитой dig 
 >dns.google.             448     IN      A       8.8.8.8  
 dns.google.             448     IN      A       8.8.4.4  
