@@ -7,17 +7,22 @@ o	удостоверьтесь, что с помощью systemctl процес�
 Description=Node Explorer  
 After=local-fs.target  
 [Service]  
-ExecStart=/var/node_explorer  
+ExecStart=/var/node_explorer $OPTIONS  
 EnvironmentFile=/etc/default/node_explorer  
 [Install]  
 WantedBy=multiuser.target  
-
 Проверка автозапуска  
 ![](https://ams02pap001files.storage.live.com/y4mpg5xsbMg0nZ6RKU_ozhVpECGUcrxRdHrPgea4nKFPFQQeKeYjDIg9WvenCRoj7Kqsydf5alIafnEd9sQAMs9l_tQVDWJLsTAKIl5qDh50kpk_NLEVmnyJAob8q1s6mvAbzed2Rwl7euZktZsu7iFZ6tG6PXb6DzArvXhqfteSdeEXhIbkmYQ2TrF8tZ5n_Si?width=1291&height=472&cropmode=none ) 
 Проверка остановки  
 ![](https://ams02pap001files.storage.live.com/y4mhAbSdI8nk3L0MvHB0ODsDGekNssDIhrrKzQY4wCNpFuO1gG_JIhbLnqYulQXxKraaSm-DkT2fl_iLRmhaQbGmRF8inYZK91Pvk6SLEa45GwWfhwLz_I6NXsh5a-W1DNGaQ1PQwf5Cg1Ziuy9j6m2VJamQTLLUNXqbX8LwKmtNorJ7OXl1DiKV8yCrQZbmsFn?width=1296&height=339&cropmode=none  )
 Проверка запуска   
-![](![](https://ams02pap001files.storage.live.com/y4mI-OkAshyvmjIaYFvdrYi1dFumq_VauwEwMIqUB5gY3feKJKRz0amayneR-ZDoOlWtYfW_fCmXm8mxcr7eTOHOdgBrTtj8nZLQEtTb6ex3sfJJITrBGJHSXiCkUeAOqCGDVfEFyhJw-gbV3DgqrvoUSVDKAVH8TZ1BqtSM2sU22gervRVBnYroQPaLBUPHYb0?width=1311&height=367&cropmode=none)  
+![](https://ams02pap001files.storage.live.com/y4mI-OkAshyvmjIaYFvdrYi1dFumq_VauwEwMIqUB5gY3feKJKRz0amayneR-ZDoOlWtYfW_fCmXm8mxcr7eTOHOdgBrTtj8nZLQEtTb6ex3sfJJITrBGJHSXiCkUeAOqCGDVfEFyhJw-gbV3DgqrvoUSVDKAVH8TZ1BqtSM2sU22gervRVBnYroQPaLBUPHYb0?width=1311&height=367&cropmode=none)  
+>Файл окружения:  
+root@vagrant:/# cat /etc/default/node_explorer  
+OPTIONS=--web.listen-address=:9200  
+После запуска изменился порт на 9200  
+![](https://ams02pap001files.storage.live.com/y4mtnZ_B58ejX5IM1Hw8EaMqPcSnURp2wux8tqgGz4Y8luonRsaDRuP-1rWJW9UEsUKwubmQCtWq3dGtTkfY0K6rcu06EsTY5Pige4Hcu-Kv1kQzVeGnt6L1-aRzfkmn9Ocr5uUQG8Mp_QwMeKxyo7G4PCTiwPVGhbCnYRSBHCj-A6cH-1WnRO5DFtFkbzfbgjb?width=949&height=711&cropmode=none)
+![](https://ams02pap001files.storage.live.com/y4mV5W5hYO7wnxx4wxCTLbG6B3RO_XgXZUJCowBGh1Xp7KJnZlVCr-RDPzgwtklfRVvT7EsFd4YuWkzIn9RqlMSXAKBlUQc2rqVT03whG5yTBw8Yg2nwcceGZBdWCDdaezvsSmPF5HvT4mfYhfYzqK1AjP87szZsVxl-l9Uwn1ZmlDtGD7RNpELrqiUKk6f3N3J?width=1313&height=388&cropmode=none)  
 
 3. Ознакомьтесь с опциями node_exporter и выводом /metrics по-умолчанию. Приведите несколько опций, которые вы бы выбрали для базового мониторинга хоста по CPU, памяти, диску и сети.  
 
